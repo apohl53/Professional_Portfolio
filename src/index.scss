@@ -1,0 +1,41 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  nav {
+    a {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      &:hover,
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2% 15px;
+  background-color: #eee;
+}

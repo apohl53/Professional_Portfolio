@@ -7,3 +7,5 @@ function About() {
 }
 
 export default About;
+
+// needs to contain photo of me + short bio

@@ -2,6 +2,8 @@ function Contact() {
   return (
     <main className="container-fluid">
       <h1> Contact</h1>
+      <p>My Email: </p> <span> </span> <nav></nav>
+      <nav href="https://github.com/apohl53">My Github</nav>
     </main>
   );
 }

@@ -7,7 +7,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 
 import resume from "../../assets/";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 function Resume() {
   const [numPages, setNumPages] = useState(null);

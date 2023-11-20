@@ -1,7 +1,49 @@
+// html,
+// body,
+// #root {
+//   height: 100%;
+// }
+
+// a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// #root {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// header {
+//   nav {
+//     a {
+//       &:not(:last-child) {
+//         margin-right: 5px;
+//       }
+//       &:hover,
+//       &.active {
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+// }
+
+// main {
+//   flex: 1;
+// }
+
+// footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 2% 15px;
+//   background-color: #eee;
+// }
+
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -9,17 +51,54 @@ a {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2% 15px;
+  background-color: #eee;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: flow;
+  text-align: center;
+}
+
+.navtext {
+  text-align: center !important;
+}
+
+.footerText {
+  margin-bottom: 0 !important;
+}
+
+.card {
+  width: 18rem;
+}
+
+.divider {
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+
+.cardResume {
+  width: auto;
+}
+
 #root {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
   nav {
     a {
-      &:not(:last-child) {
-        margin-right: 5px;
-      }
+      font-size: 20px;
+
       &:hover,
       &.active {
         text-decoration: underline;
@@ -30,12 +109,23 @@ header {
 
 main {
   flex: 1;
+  text-align: center;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 2% 15px;
-  background-color: #eee;
+.navlinks {
+  margin-right: 10px;
+}
+
+.headshot {
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header .navbar .navbar-expand-lg .navbar-light {
+  background: black;
 }

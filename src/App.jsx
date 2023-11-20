@@ -1,32 +1,28 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
+
 import About from "./pages/About";
+// import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
-import NotFound from "./pages/NotFound";
-import Error from "./pages/Error";
+// import Resume from './pages/Resume'
+import Footer from "./components/Footer";
 
 function App() {
-  const [page, setPage] = useState("home");
+  return (
+    <>
+      <Header />
 
-  const handlePage = () => {
-    return (
-      <>
-        <Header />
+      <Routes>
+        <Route path="/" element={<About />} />
+        {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/resume" element={<Resume />} /> */}
+      </Routes>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        <Footer />
-      </>
-    );
-  };
+      <Footer />
+    </>
+  );
 }
 
 export default App;

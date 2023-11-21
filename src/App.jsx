@@ -5,6 +5,7 @@ import Project from "./components/Project"; // Updated import statement
 import Contact from "./components/Contact";
 // import Resume from "./pages/Resume";
 import Footer from "./components/Footer";
+import "./styles/app.scss";
 
 function App() {
   return (

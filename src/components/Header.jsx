@@ -1,19 +1,26 @@
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/header.scss";
 
-function Header() {
+const headerStyle = {
+  backgroundColor: "grey",
+};
+
+function MainHeader(propsObj) {
   return (
-    <header className="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 bg-dark">
-      <h3 className="text-light">Portfolio Practice</h3>
-
+    <header
+      style={headerStyle}
+      id="header"
+      className="fixed-top d-flex justify-content-between"
+    >
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/resume">Resume</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <Link to="/">Home</Link>
+        <Link to="/aboutme">About Me</Link>
+        <Link to="/contact">Contact Me</Link>
+        <Link to="/projects">Projects</Link>
       </nav>
     </header>
   );
 }
 
-export default Header;
+export default MainHeader;

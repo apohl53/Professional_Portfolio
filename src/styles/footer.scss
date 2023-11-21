@@ -1,0 +1,22 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+
+  .social-links {
+    text-align: center;
+  }
+
+  a {
+    color: black;
+    transition: color 0.3s;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

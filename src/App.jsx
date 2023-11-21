@@ -1,32 +1,27 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-import Home from "./pages/Home";
-
 import About from "./pages/About";
-
-import Contact from "./pages/Contact";
+import Project from "./components/Project"; // Updated import statement
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
+import "./styles/app.scss";
 
 function App() {
-  const [page, setPage] = useState("home");
-
-  const handlePage = () => {
-    return (
-      <>
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        <Footer />
-      </>
-    );
-  };
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Project />} />{" "}
+        {/* Updated component name */}
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 export default App;

@@ -1,9 +1,26 @@
+import React from "react";
+import "../styles/aboutme.scss";
+
 function About() {
+  const divStyle = {
+    textAlign: "center",
+    fontStyle: "italic",
+    marginTop: "20px",
+  };
+
   return (
-    <main className="container-fluid">
-      <h1> About </h1>
-    </main>
+    <>
+      <div id="#About" className="hero">
+        <div className="image-container">
+          <img src="assets/photo.JPG" alt="Picture of Me" />
+        </div>
+        <p style={divStyle}>
+          My name is Alex Pohlman and Im an aspiring web developer. After
+          working in entertainment an AV for almost a decade I decided to make
+          the switch to the software side of things!{" "}
+        </p>
+      </div>
+    </>
   );
 }
-
 export default About;

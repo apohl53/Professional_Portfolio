@@ -1,7 +1,11 @@
+import Aboutme from "../components/AboutMe";
+
 function Home() {
   return (
     <main className="container-fluid">
-      <h1> Home </h1>
+      <Aboutme />
+      <Project />
+      <Resume />
     </main>
   );
 }

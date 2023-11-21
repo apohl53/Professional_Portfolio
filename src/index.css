@@ -1,0 +1,101 @@
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2% 15px;
+  background-color: #eee;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: flow;
+  text-align: center;
+}
+
+.navtext {
+  text-align: center !important;
+}
+
+.footerText {
+  margin-bottom: 0 !important;
+}
+
+.card {
+  width: 18rem;
+}
+
+.divider {
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+
+.cardResume {
+  width: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  nav {
+    a {
+      font-size: 20px;
+
+      &:hover,
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+  text-align: center;
+}
+
+.navlinks {
+  margin-right: 10px;
+}
+
+.headshot {
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header .navbar .navbar-expand-lg .navbar-light {
+  background: black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/aboutme.scss";
+import photo from "../../assets/photo.png";
 
 function About() {
   const divStyle = {
@@ -12,11 +13,11 @@ function About() {
     <>
       <div id="#About" className="hero">
         <div className="image-container">
-          <img src="assets/photo.JPG" alt="Picture of Me" />
+          <img src={photo} alt="Picture of Me" />
         </div>
         <p style={divStyle}>
-          My name is Alex Pohlman and Im an aspiring web developer. After
-          working in entertainment an AV for almost a decade I decided to make
+          My name is Alex Pohlman and I'm an aspiring web developer. After
+          working in entertainment and AV for almost a decade, I decided to make
           the switch to the software side of things!{" "}
         </p>
       </div>

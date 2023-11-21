@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import About from "./pages/About";
 import Project from "./components/Project"; // Updated import statement
 import Contact from "./components/Contact";
-// import Resume from "./pages/Resume";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import "./styles/app.scss";
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Project />} />{" "}
         {/* Updated component name */}
-        {/* <Route path="/resume" element={<Resume />} /> */}
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />
     </>

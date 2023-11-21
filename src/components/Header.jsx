@@ -15,7 +15,7 @@ function MainHeader(propsObj) {
     >
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/aboutme">About Me</Link>
+        <Link to="/about">About Me</Link>
         <Link to="/contact">Contact Me</Link>
         <Link to="/projects">Projects</Link>
       </nav>

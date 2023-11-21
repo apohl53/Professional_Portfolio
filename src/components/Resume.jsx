@@ -1,13 +1,10 @@
-// link to resume
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { useMediaQuery } from "react-responsive";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-// import resume from "../../assets/";
-
-// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import resume from "../../assets/";
 
 function Resume() {
   const [numPages, setNumPages] = useState(null);
@@ -47,26 +44,3 @@ function Resume() {
 }
 
 export default Resume;
-
-// function Resume() {
-//   return (
-//       <main className="container-fluid">
-//           <div className="cardResume mx-auto my-auto">
-//               <div className="card-body">
-//                   <h5 className="card-title mt-4">My Resume</h5>
-//                   <br />
-//                   <p className="card-text">I look forward to working alongside you all!</p>
-//                   <hr className="my-4"></hr>
-
-//                   <p className="card-text">You can download my resume down below by clicking the button.</p>
-//                   <a href="./images/KevinCastro.pdf" download="KevinCastro.pdf" className="btn btn-dark">Download Resume</a>
-
-//               </div>
-//               <img src="./images/KC_resume_23-1.png" className="card-img-top img-fluid" alt="resume"></img>
-//           </div>
-
-//       </main>
-//   )
-// }
-
-// export default Resume

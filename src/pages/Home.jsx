@@ -4,6 +4,8 @@ function Home() {
   return (
     <main className="container-fluid">
       <Aboutme />
+      <Project />
+      <Resume />
     </main>
   );
 }

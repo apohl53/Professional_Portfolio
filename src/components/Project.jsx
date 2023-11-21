@@ -1,19 +1,7 @@
-// function projects {
-//     return (
-//     // brings in 6 different projects
-//     //     An image of the deployed application (either a GIF or a screenshot)
-
-//     // The title of the project
-
-//     // A link to the deployed application
-
-//     // A link to the corresponding GitHub repository
-// // musik
-//     https://github.com/HunterMuratore/Musik
-//     // book search, musik, simple weather app,
-//     );
-// }import React from "react";
 import musik from "../../assets/project_images/Musik.png";
+import weatherapp from "../../assets/project_images/weatherapp.png";
+import booksearch from "../../assets/project_images/booksearch.png";
+import workoutplanner from "../../assets/project_images/workoutplanner.png";
 
 const imageStyle = {
   maxWidth: "600px",
@@ -32,6 +20,30 @@ const projects = [
     img: musik,
     gitLink: "https://github.com/HunterMuratore/Musik",
     appLink: "https://arcane-refuge-32686-92d3868f1b08.herokuapp.com/",
+  },
+  {
+    name: "Simple Weather App",
+    description:
+      "An app that displays the weather based on the location you enter",
+    img: weatherapp,
+    gitLink: "https://github.com/apohl53/Simple_Weather_App",
+    appLink: "https://apohl53.github.io/Simple_Weather_App/",
+  },
+  {
+    name: "Book Search Engine",
+    description:
+      "An app that lets you search for a book, similar to what a library or bookstore might use",
+    img: booksearch,
+    gitLink: "https://github.com/apohl53/Book_Search_Engine",
+    appLink: "https://agile-thicket-49697-8b64d46905bc.herokuapp.com/",
+  },
+  {
+    name: "Workout Planner",
+    description:
+      "This was my first group project, it uses an api to generate random workouts based on the part of the body you choose",
+    img: workoutplanner,
+    gitLink: "https://apohl53.github.io/Workout_Planner_Project/",
+    appLink: "https://github.com/apohl53/Workout_Planner_Project",
   },
 ];
 
